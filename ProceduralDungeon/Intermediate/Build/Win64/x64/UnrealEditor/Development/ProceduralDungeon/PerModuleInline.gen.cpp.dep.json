@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\proceduraldungeon\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\x64\\proceduraldungeoneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\proceduraldungeon\\definitions.proceduraldungeon.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

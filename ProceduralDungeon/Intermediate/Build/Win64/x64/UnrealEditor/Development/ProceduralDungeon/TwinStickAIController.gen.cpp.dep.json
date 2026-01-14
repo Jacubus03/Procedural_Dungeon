@@ -1,0 +1,28 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\unrealeditor\\inc\\proceduraldungeon\\uht\\twinstickaicontroller.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\x64\\proceduraldungeoneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\proceduraldungeon\\definitions.proceduraldungeon.h",
+            "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\source\\proceduraldungeon\\variant_twinstick\\ai\\twinstickaicontroller.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\source\\runtime\\aimodule\\classes\\aicontroller.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\source\\runtime\\aimodule\\classes\\aitypes.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\source\\runtime\\navigationsystem\\public\\navigationsystemtypes.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\ai\\navigation\\navagentselector.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\navagentselector.generated.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aitypes.generated.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\source\\runtime\\aimodule\\classes\\perception\\aiperceptionlistenerinterface.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aiperceptionlistenerinterface.generated.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\source\\runtime\\aimodule\\classes\\genericteamagentinterface.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\genericteamagentinterface.generated.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\public\\visuallogger\\visualloggerdebugsnapshotinterface.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\visualloggerdebugsnapshotinterface.generated.h",
+            "e:\\epic games\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aicontroller.generated.h",
+            "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\unrealeditor\\inc\\proceduraldungeon\\uht\\twinstickaicontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

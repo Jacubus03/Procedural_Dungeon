@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\unrealeditor\\inc\\proceduraldungeon\\uht\\twinstickpickup.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\x64\\proceduraldungeoneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\proceduraldungeon\\definitions.proceduraldungeon.h",
+            "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\source\\proceduraldungeon\\variant_twinstick\\gameplay\\twinstickpickup.h",
+            "e:\\unreal projects\\procedural_dungeon\\proceduraldungeon\\intermediate\\build\\win64\\unrealeditor\\inc\\proceduraldungeon\\uht\\twinstickpickup.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
