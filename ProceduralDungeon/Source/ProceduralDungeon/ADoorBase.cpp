@@ -1,27 +1,13 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "ADoorBase.h"
+#include "Components/SceneComponent.h"
 
-// Sets default values
-AADoorBase::AADoorBase()
+ADoorBase::ADoorBase()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 
+	USceneComponent* RootComp = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+	RootComponent = RootComp;
+
+	JoinPoint = CreateDefaultSubobject<USceneComponent>(TEXT("JoinPoint"));
+	JoinPoint->SetupAttachment(RootComponent); 
 }
-
-// Called when the game starts or when spawned
-void AADoorBase::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
-void AADoorBase::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-

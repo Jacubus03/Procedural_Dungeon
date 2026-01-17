@@ -14,9 +14,9 @@ void EmptyLinkFunctionForGeneratedCodeADungeonGenerator() {}
 // ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_AActor();
-ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ADungeonGenerator();
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ADungeonGenerator_NoRegister();
+PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ARoomBase_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ProceduralDungeon();
 // ********** End Cross Module References **********************************************************
 
@@ -26,13 +26,7 @@ struct Z_Construct_UFunction_ADungeonGenerator_SpawnRandomRoom_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Dungeon" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// Spawn funkcja\n" },
-#endif
 		{ "ModuleRelativePath", "ADungeonGenerator.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Spawn funkcja" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -103,13 +97,7 @@ struct Z_Construct_UClass_ADungeonGenerator_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RoomPrefabs_MetaData[] = {
 		{ "Category", "Dungeon" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// Lista prefab\xef\xbf\xbdw pokoj\xef\xbf\xbdw\n" },
-#endif
 		{ "ModuleRelativePath", "ADungeonGenerator.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Lista prefab\xef\xbf\xbdw pokoj\xef\xbf\xbdw" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_RoomPrefabs_Inner;
@@ -117,7 +105,7 @@ struct Z_Construct_UClass_ADungeonGenerator_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ADungeonGenerator_SpawnRandomRoom, "SpawnRandomRoom" }, // 2430779547
+		{ &Z_Construct_UFunction_ADungeonGenerator_SpawnRandomRoom, "SpawnRandomRoom" }, // 4017178956
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -125,7 +113,7 @@ struct Z_Construct_UClass_ADungeonGenerator_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ADungeonGenerator_Statics::NewProp_RoomPrefabs_Inner = { "RoomPrefabs", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ADungeonGenerator_Statics::NewProp_RoomPrefabs_Inner = { "RoomPrefabs", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_ARoomBase_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ADungeonGenerator_Statics::NewProp_RoomPrefabs = { "RoomPrefabs", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ADungeonGenerator, RoomPrefabs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomPrefabs_MetaData), NewProp_RoomPrefabs_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADungeonGenerator_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADungeonGenerator_Statics::NewProp_RoomPrefabs_Inner,
@@ -168,10 +156,10 @@ ADungeonGenerator::~ADungeonGenerator() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ADungeonGenerator, ADungeonGenerator::StaticClass, TEXT("ADungeonGenerator"), &Z_Registration_Info_UClass_ADungeonGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADungeonGenerator), 1309379871U) },
+		{ Z_Construct_UClass_ADungeonGenerator, ADungeonGenerator::StaticClass, TEXT("ADungeonGenerator"), &Z_Registration_Info_UClass_ADungeonGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADungeonGenerator), 2355203651U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_2346866408(TEXT("/Script/ProceduralDungeon"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_3444687286(TEXT("/Script/ProceduralDungeon"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

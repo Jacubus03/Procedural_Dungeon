@@ -45,6 +45,12 @@
     <ClInclude Include="..\..\Source\ProceduralDungeon\ADungeonGenerator.h">
       <Filter>Source\ProceduralDungeon</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\ProceduralDungeon\ARoomBase.cpp">
+      <Filter>Source\ProceduralDungeon</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ProceduralDungeon\ARoomBase.h">
+      <Filter>Source\ProceduralDungeon</Filter>
+    </ClInclude>
     <None Include="..\..\Source\ProceduralDungeon\ProceduralDungeon.Build.cs">
       <Filter>Source\ProceduralDungeon</Filter>
     </None>

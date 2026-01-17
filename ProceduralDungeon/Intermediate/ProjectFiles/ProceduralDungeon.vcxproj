@@ -266,6 +266,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\ProceduralDungeon\ADungeonGenerator.h"/>
+    <ClCompile Include="..\..\Source\ProceduralDungeon\ARoomBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ProceduralDungeon\ARoomBase.h"/>
     <None Include="..\..\Source\ProceduralDungeon\ProceduralDungeon.Build.cs"/>
     <ClCompile Include="..\..\Source\ProceduralDungeon\ProceduralDungeon.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

@@ -48,9 +48,11 @@
 			"TwinStickUI.cpp.obj",
 			"ADoorBase.gen.cpp.obj",
 			"ADungeonGenerator.gen.cpp.obj",
+			"ARoomBase.gen.cpp.obj",
 			"ProceduralDungeon.init.gen.cpp.obj",
 			"ADoorBase.cpp.obj",
-			"ADungeonGenerator.cpp.obj"
+			"ADungeonGenerator.cpp.obj",
+			"ARoomBase.cpp.obj"
 		]
 	}
 }

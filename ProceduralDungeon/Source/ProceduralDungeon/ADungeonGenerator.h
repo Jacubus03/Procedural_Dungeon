@@ -1,8 +1,9 @@
-// ADungeonGenerator.h
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "ADungeonGenerator.generated.h"
+
+class ARoomBase;
 
 UCLASS()
 class PROCEDURALDUNGEON_API ADungeonGenerator : public AActor
@@ -16,11 +17,9 @@ protected:
     virtual void BeginPlay() override;
 
 public:
-    // Lista prefabów pokojów
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Dungeon")
-    TArray<TSubclassOf<AActor>> RoomPrefabs;
+    TArray<TSubclassOf<ARoomBase>> RoomPrefabs;
 
-    // Spawn funkcja
     UFUNCTION(BlueprintCallable, Category="Dungeon")
     void SpawnRandomRoom();
 };

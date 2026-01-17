@@ -1,26 +1,16 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "ADoorBase.generated.h"
 
 UCLASS()
-class PROCEDURALDUNGEON_API AADoorBase : public AActor
+class PROCEDURALDUNGEON_API ADoorBase : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	AADoorBase();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+public:
+	ADoorBase();
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Door")
+	USceneComponent* JoinPoint;
 };

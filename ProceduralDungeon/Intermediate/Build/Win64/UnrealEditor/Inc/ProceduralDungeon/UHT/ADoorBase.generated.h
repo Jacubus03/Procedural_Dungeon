@@ -16,43 +16,43 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
-// ********** Begin Class AADoorBase ***************************************************************
-PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_AADoorBase_NoRegister();
+// ********** Begin Class ADoorBase ****************************************************************
+PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ADoorBase_NoRegister();
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_9_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesAADoorBase(); \
-	friend struct Z_Construct_UClass_AADoorBase_Statics; \
+	static void StaticRegisterNativesADoorBase(); \
+	friend struct Z_Construct_UClass_ADoorBase_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_AADoorBase_NoRegister(); \
+	friend PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ADoorBase_NoRegister(); \
 public: \
-	DECLARE_CLASS2(AADoorBase, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/ProceduralDungeon"), Z_Construct_UClass_AADoorBase_NoRegister) \
-	DECLARE_SERIALIZER(AADoorBase)
+	DECLARE_CLASS2(ADoorBase, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/ProceduralDungeon"), Z_Construct_UClass_ADoorBase_NoRegister) \
+	DECLARE_SERIALIZER(ADoorBase)
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_9_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
-	AADoorBase(AADoorBase&&) = delete; \
-	AADoorBase(const AADoorBase&) = delete; \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AADoorBase); \
-	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AADoorBase); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AADoorBase) \
-	NO_API virtual ~AADoorBase();
+	ADoorBase(ADoorBase&&) = delete; \
+	ADoorBase(const ADoorBase&) = delete; \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ADoorBase); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoorBase); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADoorBase) \
+	NO_API virtual ~ADoorBase();
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_9_PROLOG
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_12_GENERATED_BODY \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_6_PROLOG
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_9_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_9_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h_9_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-class AADoorBase;
+class ADoorBase;
 
-// ********** End Class AADoorBase *****************************************************************
+// ********** End Class ADoorBase ******************************************************************
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADoorBase_h
