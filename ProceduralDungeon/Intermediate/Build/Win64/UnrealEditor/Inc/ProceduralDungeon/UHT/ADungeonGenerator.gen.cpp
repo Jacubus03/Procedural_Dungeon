@@ -20,6 +20,58 @@ PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ARoomBase_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ProceduralDungeon();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class ADungeonGenerator Function DoesRoomOverlap *******************************
+struct Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics
+{
+	struct DungeonGenerator_eventDoesRoomOverlap_Parms
+	{
+		ARoomBase* TestRoom;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Dungeon" },
+		{ "ModuleRelativePath", "ADungeonGenerator.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TestRoom;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::NewProp_TestRoom = { "TestRoom", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DungeonGenerator_eventDoesRoomOverlap_Parms, TestRoom), Z_Construct_UClass_ARoomBase_NoRegister, METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((DungeonGenerator_eventDoesRoomOverlap_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(DungeonGenerator_eventDoesRoomOverlap_Parms), &Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::NewProp_TestRoom,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ADungeonGenerator, nullptr, "DoesRoomOverlap", Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::PropPointers), sizeof(Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::DungeonGenerator_eventDoesRoomOverlap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::DungeonGenerator_eventDoesRoomOverlap_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ADungeonGenerator::execDoesRoomOverlap)
+{
+	P_GET_OBJECT(ARoomBase,Z_Param_TestRoom);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->DoesRoomOverlap(Z_Param_TestRoom);
+	P_NATIVE_END;
+}
+// ********** End Class ADungeonGenerator Function DoesRoomOverlap *********************************
+
 // ********** Begin Class ADungeonGenerator Function SpawnRandomRoom *******************************
 struct Z_Construct_UFunction_ADungeonGenerator_SpawnRandomRoom_Statics
 {
@@ -55,6 +107,7 @@ void ADungeonGenerator::StaticRegisterNativesADungeonGenerator()
 {
 	UClass* Class = ADungeonGenerator::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "DoesRoomOverlap", &ADungeonGenerator::execDoesRoomOverlap },
 		{ "SpawnRandomRoom", &ADungeonGenerator::execSpawnRandomRoom },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -105,6 +158,7 @@ struct Z_Construct_UClass_ADungeonGenerator_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_ADungeonGenerator_DoesRoomOverlap, "DoesRoomOverlap" }, // 2692290607
 		{ &Z_Construct_UFunction_ADungeonGenerator_SpawnRandomRoom, "SpawnRandomRoom" }, // 4017178956
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -156,10 +210,10 @@ ADungeonGenerator::~ADungeonGenerator() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ADungeonGenerator, ADungeonGenerator::StaticClass, TEXT("ADungeonGenerator"), &Z_Registration_Info_UClass_ADungeonGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADungeonGenerator), 2355203651U) },
+		{ Z_Construct_UClass_ADungeonGenerator, ADungeonGenerator::StaticClass, TEXT("ADungeonGenerator"), &Z_Registration_Info_UClass_ADungeonGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADungeonGenerator), 708138705U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_3444687286(TEXT("/Script/ProceduralDungeon"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_289691899(TEXT("/Script/ProceduralDungeon"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h__Script_ProceduralDungeon_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

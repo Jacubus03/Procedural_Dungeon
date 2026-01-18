@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.ProceduralDungeon.cpp.obj": [
+			"ADoorBase.gen.cpp.obj",
 			"ADungeonGenerator.gen.cpp.obj",
 			"ProceduralDungeonCharacter.gen.cpp.obj",
 			"ProceduralDungeonGameMode.gen.cpp.obj",
@@ -47,7 +48,6 @@
 			"TwinStickGameMode.cpp.obj",
 			"TwinStickPlayerController.cpp.obj",
 			"TwinStickUI.cpp.obj",
-			"ADoorBase.gen.cpp.obj",
 			"ARoomBase.gen.cpp.obj",
 			"ProceduralDungeon.init.gen.cpp.obj",
 			"ADoorBase.cpp.obj",

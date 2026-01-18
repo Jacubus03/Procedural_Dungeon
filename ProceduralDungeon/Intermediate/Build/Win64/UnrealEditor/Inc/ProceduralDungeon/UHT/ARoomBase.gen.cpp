@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeARoomBase() {}
 
 // ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_AActor();
+ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ADoorBase_NoRegister();
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ARoomBase();
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ARoomBase_NoRegister();
@@ -63,9 +64,16 @@ struct Z_Construct_UClass_ARoomBase_Statics
 		{ "Category", "Room" },
 		{ "ModuleRelativePath", "ARoomBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Colliders_MetaData[] = {
+		{ "Category", "Room" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ARoomBase.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Doors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Doors;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Colliders_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_Colliders;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -73,11 +81,15 @@ struct Z_Construct_UClass_ARoomBase_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARoomBase_Statics::NewProp_Doors_Inner = { "Doors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_ADoorBase_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ARoomBase_Statics::NewProp_Doors = { "Doors", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoomBase, Doors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Doors_MetaData), NewProp_Doors_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARoomBase_Statics::NewProp_Doors_Inner = { "Doors", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_ADoorBase_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ARoomBase_Statics::NewProp_Doors = { "Doors", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoomBase, Doors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Doors_MetaData), NewProp_Doors_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARoomBase_Statics::NewProp_Colliders_Inner = { "Colliders", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ARoomBase_Statics::NewProp_Colliders = { "Colliders", nullptr, (EPropertyFlags)0x001000800000000d, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoomBase, Colliders), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Colliders_MetaData), NewProp_Colliders_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARoomBase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoomBase_Statics::NewProp_Doors_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoomBase_Statics::NewProp_Doors,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoomBase_Statics::NewProp_Colliders_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoomBase_Statics::NewProp_Colliders,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ARoomBase_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ARoomBase_Statics::DependentSingletons[])() = {
@@ -116,10 +128,10 @@ ARoomBase::~ARoomBase() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h__Script_ProceduralDungeon_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ARoomBase, ARoomBase::StaticClass, TEXT("ARoomBase"), &Z_Registration_Info_UClass_ARoomBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARoomBase), 3466533540U) },
+		{ Z_Construct_UClass_ARoomBase, ARoomBase::StaticClass, TEXT("ARoomBase"), &Z_Registration_Info_UClass_ARoomBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARoomBase), 3668822195U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h__Script_ProceduralDungeon_3576868544(TEXT("/Script/ProceduralDungeon"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h__Script_ProceduralDungeon_3293969853(TEXT("/Script/ProceduralDungeon"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h__Script_ProceduralDungeon_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

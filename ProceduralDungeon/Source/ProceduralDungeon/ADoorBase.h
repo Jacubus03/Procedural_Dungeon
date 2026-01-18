@@ -11,6 +11,6 @@ class PROCEDURALDUNGEON_API ADoorBase : public AActor
 public:
 	ADoorBase();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Door")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Door")
 	USceneComponent* JoinPoint;
 };

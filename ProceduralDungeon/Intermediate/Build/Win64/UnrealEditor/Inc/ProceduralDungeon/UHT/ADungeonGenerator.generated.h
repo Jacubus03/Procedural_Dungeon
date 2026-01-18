@@ -16,9 +16,12 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class ARoomBase;
+
 // ********** Begin Class ADungeonGenerator ********************************************************
 #define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execSpawnRandomRoom);
+	DECLARE_FUNCTION(execSpawnRandomRoom); \
+	DECLARE_FUNCTION(execDoesRoomOverlap);
 
 
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ADungeonGenerator_NoRegister();

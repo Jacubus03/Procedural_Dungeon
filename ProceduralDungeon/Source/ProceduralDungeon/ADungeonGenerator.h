@@ -21,5 +21,8 @@ public:
     TArray<TSubclassOf<ARoomBase>> RoomPrefabs;
 
     UFUNCTION(BlueprintCallable, Category="Dungeon")
+    bool DoesRoomOverlap(ARoomBase* TestRoom);
+
+    UFUNCTION(BlueprintCallable, Category="Dungeon")
     void SpawnRandomRoom();
 };

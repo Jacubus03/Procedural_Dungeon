@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ARoomBase ****************************************************************
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ARoomBase_NoRegister();
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_10_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesARoomBase(); \
 	friend struct Z_Construct_UClass_ARoomBase_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ARoomBase)
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_10_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ARoomBase(ARoomBase&&) = delete; \
 	ARoomBase(const ARoomBase&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~ARoomBase();
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_7_PROLOG
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_10_GENERATED_BODY \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_9_PROLOG
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_10_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_10_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_12_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ARoomBase_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
