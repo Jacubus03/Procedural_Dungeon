@@ -73,6 +73,7 @@ ProceduralDungeon/Plugins/**/Intermediate/*
 # Cache files for the editor to use
 ProceduralDungeon/DerivedDataCache/*
 
+Intermediate/
 Backup/*
 Backup1/*
 Backup
