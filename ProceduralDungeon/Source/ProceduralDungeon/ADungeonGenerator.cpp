@@ -14,31 +14,119 @@ void ADungeonGenerator::BeginPlay()
 {
     Super::BeginPlay();
 
-    FActorSpawnParameters SpawnParams;
-    SpawnParams.Owner = this;
+    FRandomStream RandomStream;
+    if (bRandomSeed) RandomStream.GenerateNewSeed();
+    else RandomStream = InitialSeed;
 
-    // --- 1. Spawn pierwszego pokoju ---
-    int32 FirstIndex = UKismetMathLibrary::RandomInteger(RoomPrefabs.Num());
-    TSubclassOf<ARoomBase> FirstRoomClass = RoomPrefabs[FirstIndex];
+	GenerateDungeon(RandomStream);
 
-    ARoomBase* FirstRoom = GetWorld()->SpawnActor<ARoomBase>(
-        FirstRoomClass,
-        GetActorLocation(),
-        FRotator::ZeroRotator,
-        SpawnParams
+	UE_LOG(LogTemp, Warning, TEXT("Dungeon generated with seed: %d"), RandomStream.GetCurrentSeed());
+}
+
+void ADungeonGenerator::GenerateDungeon(FRandomStream& Seed)
+{
+	TArray<ADoorBase*> OpenDoors;
+
+	// Spawn First Room
+    int32 RandomIndex = Seed.RandRange(0, RoomPrefabs.Num() - 1);
+    TSubclassOf<ARoomBase> CurrentRoomClass = RoomPrefabs[RandomIndex];
+    ARoomBase* CurrentRoom = GetWorld()->SpawnActor<ARoomBase>(
+        CurrentRoomClass,
+        FVector::ZeroVector,
+        FRotator::ZeroRotator
     );
+    if (!IsValid(CurrentRoom)) return;
 
-    UE_LOG(LogTemp, Log, TEXT("Overlap: %s"), DoesRoomOverlap(FirstRoom) ? TEXT("True") : TEXT("False"));
+	// Add its doors to open doors list
+    for (ADoorBase* Door : CurrentRoom->Doors)
+    {
+        OpenDoors.Add(Door);
+	}
 
-    ARoomBase* SecondRoom = GetWorld()->SpawnActor<ARoomBase>(
-        FirstRoomClass,
-        FVector::RightVector * 1000,
-        FRotator::ZeroRotator,
-        SpawnParams
-    );
+	// Spawn Next Rooms
+	for (int32 i = 1; i < RoomsToGenerate; i++)
+    {
+        SpawnNextRoom(OpenDoors, Seed);
+    }
 
-    UE_LOG(LogTemp, Log, TEXT("Overlap 1: %s"), DoesRoomOverlap(FirstRoom) ? TEXT("True") : TEXT("False"));
-    UE_LOG(LogTemp, Log, TEXT("Overlap 2: %s"), DoesRoomOverlap(FirstRoom) ? TEXT("True") : TEXT("False"));
+    // Sprawdzić 2 otwarte drzwi czy się stykają
+    // Zamknąć otwarte drzwi
+}
+
+void ADungeonGenerator::SpawnNextRoom(TArray<ADoorBase*>& OpenDoors, FRandomStream& Seed)
+{
+    TArray<TSubclassOf<ARoomBase>> PrefabsBag = RoomPrefabs;
+    while (PrefabsBag.Num() > 0)
+    {
+        int32 RandomIndex = Seed.RandRange(0, PrefabsBag.Num() - 1);
+        TSubclassOf<ARoomBase> CurrentRoomClass = PrefabsBag[RandomIndex];
+        ARoomBase* CurrentRoom = GetWorld()->SpawnActor<ARoomBase>(
+            CurrentRoomClass,
+            FVector::ZeroVector,
+            FRotator::ZeroRotator
+        );
+        PrefabsBag.RemoveAtSwap(RandomIndex);
+        if (!IsValid(CurrentRoom)) continue;
+        CurrentRoom->SetActorHiddenInGame(true);
+
+        // Choose random open door
+        TArray<ADoorBase*> OpensBag = OpenDoors;
+        while (OpensBag.Num() > 0)
+        {
+            RandomIndex = Seed.RandRange(0, OpensBag.Num() - 1);
+            ADoorBase* OpenDoor = OpensBag[RandomIndex];
+            OpensBag.RemoveAtSwap(RandomIndex);
+
+            // Choose random door from current room
+            TArray<ADoorBase*> DoorsBag = CurrentRoom->Doors;
+            while (DoorsBag.Num() > 0)
+            {
+                RandomIndex = Seed.RandRange(0, DoorsBag.Num() - 1);
+                ADoorBase* CurrentDoor = DoorsBag[RandomIndex];
+                DoorsBag.RemoveAtSwap(RandomIndex);
+
+                PositionRoom(CurrentRoom, CurrentDoor, OpenDoor);
+                if (!DoesRoomOverlap(CurrentRoom))
+                {
+                    CurrentRoom->SetActorHiddenInGame(false);
+
+                    OpenDoors.Remove(OpenDoor);
+
+                    for (ADoorBase* Door : CurrentRoom->Doors)
+                    {
+                        if (Door != CurrentDoor)
+                        {
+                            OpenDoors.Add(Door);
+                        }
+                    }
+
+                    return;
+                }
+            }
+        }
+
+        CurrentRoom->Destroy();
+    }
+}
+
+void ADungeonGenerator::PositionRoom(ARoomBase* RoomToPosition, ADoorBase* SourceDoor, ADoorBase* TargetDoor)
+{
+    if (!RoomToPosition || !SourceDoor || !TargetDoor) return;
+
+	FTransform TargetTransform = TargetDoor->GetActorTransform();
+    FTransform SourceTransform = SourceDoor->GetActorTransform();
+    FRotator SourceRotation = SourceTransform.GetRotation().Rotator();
+    FRotator TargetRotation = TargetTransform.GetRotation().Rotator();
+    FRotator DesiredRotation = TargetRotation + FRotator(0.f, 180.f, 0.f);
+    FRotator RotationDelta = DesiredRotation - SourceRotation;
+    RoomToPosition->SetActorRotation(RoomToPosition->GetActorRotation() + RotationDelta);
+
+    TargetTransform = TargetDoor->JoinPoint->GetComponentTransform();
+    SourceTransform = SourceDoor->JoinPoint->GetComponentTransform();
+    FVector SourceLocation = SourceTransform.GetLocation();
+    FVector TargetLocation = TargetTransform.GetLocation();
+    FVector LocationDelta = TargetLocation - SourceLocation;
+    RoomToPosition->SetActorLocation(RoomToPosition->GetActorLocation() + LocationDelta);
 }
 
 bool ADungeonGenerator::DoesRoomOverlap(ARoomBase* TestRoom)
@@ -51,137 +139,9 @@ bool ADungeonGenerator::DoesRoomOverlap(ARoomBase* TestRoom)
         Box->GetOverlappingActors(OverlappingActors);
         if (OverlappingActors.Num() > 0)
         {
-            return true; // ❌ kolizja z innym pokojem
-		}
-
-        //if (!Box) continue;
-
-        //TArray<FOverlapResult> Overlaps;
-
-        //FCollisionQueryParams Params;
-        //Params.AddIgnoredActor(TestRoom);
-
-        //bool bOverlap = GetWorld()->OverlapMultiByObjectType(
-        //    Overlaps,
-        //    Box->GetComponentLocation(),
-        //    Box->GetComponentQuat(),
-        //    FCollisionObjectQueryParams(ECC_GameTraceChannel1), // Room
-        //    FCollisionShape::MakeBox(Box->GetScaledBoxExtent()),
-        //    Params
-        //);
-
-        //if (bOverlap)
-        //{
-        //    return true; // ❌ kolizja z innym pokojem
-        //}
+            return true;
+        }
     }
 
-    return false; // ✅ brak kolizji
-}
-
-void ADungeonGenerator::SpawnRandomRoom()
-{
-    if (RoomPrefabs.Num() == 0) return;
-
-    FActorSpawnParameters SpawnParams;
-    SpawnParams.Owner = this;
-
-    // --- 1. Spawn pierwszego pokoju ---
-    int32 FirstIndex = UKismetMathLibrary::RandomInteger(RoomPrefabs.Num());
-    TSubclassOf<ARoomBase> FirstRoomClass = RoomPrefabs[FirstIndex];
-
-    if (!FirstRoomClass) return;
-
-    ARoomBase* FirstRoom = GetWorld()->SpawnActor<ARoomBase>(
-        FirstRoomClass,
-        GetActorLocation(),
-        FRotator::ZeroRotator,
-        SpawnParams
-    );
-
-    if (!FirstRoom || FirstRoom->Doors.Num() == 0) return;
-
-    // --- 2. Wybierz losowe drzwi pierwszego pokoju ---
-    ADoorBase* FirstDoor = nullptr;
-    for (int i = 0; i < 10; i++) // retry 10 razy
-    {
-        int32 FirstDoorIndex = UKismetMathLibrary::RandomInteger(FirstRoom->Doors.Num());
-        FirstDoor = FirstRoom->Doors[FirstDoorIndex];
-        if (FirstDoor && FirstDoor->JoinPoint) break;
-        FirstDoor = nullptr;
-    }
-
-    if (!FirstDoor || !FirstDoor->JoinPoint)
-    {
-        UE_LOG(LogTemp, Warning, TEXT("First room has no valid doors!"));
-        return;
-    }
-
-    FVector TargetJoinPoint = FirstDoor->JoinPoint->GetComponentLocation();
-    FVector FirstDoorForward = FirstDoor->JoinPoint->GetForwardVector();
-
-    // --- 3. Wybierz losowy drugi pokój ---
-    int32 SecondIndex = UKismetMathLibrary::RandomInteger(RoomPrefabs.Num());
-    TSubclassOf<ARoomBase> SecondRoomClass = RoomPrefabs[SecondIndex];
-
-    if (!SecondRoomClass) return;
-
-    // --- 4. Spawn tymczasowy drugi pokój ---
-    ARoomBase* TempSecondRoom = GetWorld()->SpawnActor<ARoomBase>(
-        SecondRoomClass,
-        FVector::ZeroVector,
-        FRotator::ZeroRotator,
-        SpawnParams
-    );
-
-    if (!TempSecondRoom || TempSecondRoom->Doors.Num() == 0)
-    {
-        if (TempSecondRoom) TempSecondRoom->Destroy();
-        return;
-    }
-
-    TempSecondRoom->SetActorHiddenInGame(true);
-    TempSecondRoom->SetActorEnableCollision(false);
-
-    // --- 5. Wybierz losowe drzwi drugiego pokoju ---
-    ADoorBase* SecondDoor = nullptr;
-    for (int i = 0; i < 10; i++)
-    {
-        int32 SecondDoorIndex = UKismetMathLibrary::RandomInteger(TempSecondRoom->Doors.Num());
-        SecondDoor = TempSecondRoom->Doors[SecondDoorIndex];
-        if (SecondDoor && SecondDoor->JoinPoint) break;
-        SecondDoor = nullptr;
-    }
-
-    if (!SecondDoor || !SecondDoor->JoinPoint)
-    {
-        UE_LOG(LogTemp, Warning, TEXT("Second room has no valid doors!"));
-        TempSecondRoom->Destroy();
-        return;
-    }
-
-    // --- 6. Oblicz lokalny offset drugich drzwi względem root ---
-    FVector SecondDoorLocalOffset = SecondDoor->JoinPoint->GetRelativeLocation();
-
-    // --- 7. Oblicz rotację drugiego pokoju (drzwi naprzeciw pierwszych) ---
-    FVector TargetForward = -FirstDoorForward; // drzwi drugiego pokoju patrzą naprzeciw
-    FVector SecondDoorForward = SecondDoor->JoinPoint->GetForwardVector();
-
-    FRotator DeltaRot = FRotationMatrix::MakeFromX(TargetForward).Rotator()
-        - FRotationMatrix::MakeFromX(SecondDoorForward).Rotator();
-    FRotator FinalRotation = DeltaRot; // obrót całego pokoju
-
-    // --- 8. Przekształć lokalny offset do world space ---
-    FVector WorldOffset = FinalRotation.RotateVector(SecondDoorLocalOffset);
-
-    // --- 9. Oblicz finalną pozycję root drugiego pokoju ---
-    FVector SpawnLocation = TargetJoinPoint - WorldOffset;
-
-    // --- 10. Ustaw pozycję i rotację, pokaż pokój ---
-    TempSecondRoom->SetActorRotation(FinalRotation);
-    TempSecondRoom->SetActorLocation(SpawnLocation);
-    TempSecondRoom->SetActorHiddenInGame(false);
-    TempSecondRoom->SetActorEnableCollision(true);
-
-    UE_LOG(LogTemp, Log, TEXT("Spawned second room at %s with rotation %s"), *SpawnLocation.ToString(), *FinalRotation.ToString());
+    return false;
 }

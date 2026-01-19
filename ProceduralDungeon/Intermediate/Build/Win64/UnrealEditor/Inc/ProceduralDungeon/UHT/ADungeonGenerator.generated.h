@@ -16,17 +16,10 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
-class ARoomBase;
-
 // ********** Begin Class ADungeonGenerator ********************************************************
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execSpawnRandomRoom); \
-	DECLARE_FUNCTION(execDoesRoomOverlap);
-
-
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_ADungeonGenerator_NoRegister();
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_11_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADungeonGenerator(); \
 	friend struct Z_Construct_UClass_ADungeonGenerator_Statics; \
@@ -37,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ADungeonGenerator)
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_11_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ADungeonGenerator(ADungeonGenerator&&) = delete; \
 	ADungeonGenerator(const ADungeonGenerator&) = delete; \
@@ -47,13 +40,12 @@ public: \
 	NO_API virtual ~ADungeonGenerator();
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_8_PROLOG
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_11_GENERATED_BODY \
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_9_PROLOG
+#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_11_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_11_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_12_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ADungeonGenerator_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -3,6 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "ADungeonGenerator.generated.h"
 
+class ADoorBase;
 class ARoomBase;
 
 UCLASS()
@@ -16,13 +17,18 @@ public:
 protected:
     virtual void BeginPlay() override;
 
-public:
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Dungeon")
+private:
+    UPROPERTY(EditAnywhere, Category = "Dungeon")
     TArray<TSubclassOf<ARoomBase>> RoomPrefabs;
+    UPROPERTY(EditAnywhere, Category = "Dungeon")
+    bool bRandomSeed;
+    UPROPERTY(EditAnywhere, Category = "Dungeon")
+    FRandomStream InitialSeed;
+	UPROPERTY(EditAnywhere, Category = "Dungeon")
+    int32 RoomsToGenerate;
 
-    UFUNCTION(BlueprintCallable, Category="Dungeon")
+    void GenerateDungeon(FRandomStream& Seed);
+	void SpawnNextRoom(TArray<ADoorBase*>& OpenDoors, FRandomStream& Seed);
+	void PositionRoom(ARoomBase* RoomToPosition, ADoorBase* SourceDoor, ADoorBase* TargetDoor);
     bool DoesRoomOverlap(ARoomBase* TestRoom);
-
-    UFUNCTION(BlueprintCallable, Category="Dungeon")
-    void SpawnRandomRoom();
 };
