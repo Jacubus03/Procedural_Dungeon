@@ -258,14 +258,14 @@ UTwinStickUI::~UTwinStickUI() {}
 // ********** End Class UTwinStickUI ***************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h__Script_ProceduralDungeon_Statics
+struct Z_CompiledInDeferFile_FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h__Script_ProceduralDungeon_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UTwinStickUI, UTwinStickUI::StaticClass, TEXT("UTwinStickUI"), &Z_Registration_Info_UClass_UTwinStickUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTwinStickUI), 2081454681U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h__Script_ProceduralDungeon_3787488647(TEXT("/Script/ProceduralDungeon"),
-	Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h__Script_ProceduralDungeon_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h__Script_ProceduralDungeon_3787488647(TEXT("/Script/ProceduralDungeon"),
+	Z_CompiledInDeferFile_FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h__Script_ProceduralDungeon_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

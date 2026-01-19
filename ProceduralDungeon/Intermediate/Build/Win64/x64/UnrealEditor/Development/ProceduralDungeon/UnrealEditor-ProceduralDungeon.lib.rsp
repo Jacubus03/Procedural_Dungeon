@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-ProceduralDungeon.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/ProceduralDungeonEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
-"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp.obj"
-"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Default.rc2.res"
-/OUT:"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/UnrealEditor-ProceduralDungeon.lib"
+"C:/Users/Dell/Documents/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/ProceduralDungeonEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/Dell/Documents/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp.obj"
+"C:/Users/Dell/Documents/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Default.rc2.res"
+/OUT:"C:/Users/Dell/Documents/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/UnrealEditor-ProceduralDungeon.lib"

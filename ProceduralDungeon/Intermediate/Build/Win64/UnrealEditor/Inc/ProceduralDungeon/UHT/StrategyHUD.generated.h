@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AStrategyHUD *************************************************************
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_AStrategyHUD_NoRegister();
 
-#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAStrategyHUD(); \
 	friend struct Z_Construct_UClass_AStrategyHUD_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AStrategyHUD)
 
 
-#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AStrategyHUD(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~AStrategyHUD();
 
 
-#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_15_PROLOG
-#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_GENERATED_BODY \
+#define FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_15_PROLOG
+#define FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_INCLASS_NO_PURE_DECLS \
-	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_ENHANCED_CONSTRUCTORS \
+	FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +57,6 @@ class AStrategyHUD;
 // ********** End Class AStrategyHUD ***************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h
+#define CURRENT_FILE_ID FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_UI_StrategyHUD_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

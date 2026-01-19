@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AProceduralDungeonPlayerController ***************************************
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_AProceduralDungeonPlayerController_NoRegister();
 
-#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAProceduralDungeonPlayerController(); \
 	friend struct Z_Construct_UClass_AProceduralDungeonPlayerController_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AProceduralDungeonPlayerController)
 
 
-#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AProceduralDungeonPlayerController(AProceduralDungeonPlayerController&&) = delete; \
 	AProceduralDungeonPlayerController(const AProceduralDungeonPlayerController&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~AProceduralDungeonPlayerController();
 
 
-#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_20_PROLOG
-#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_GENERATED_BODY \
+#define FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_20_PROLOG
+#define FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_INCLASS_NO_PURE_DECLS \
-	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_ENHANCED_CONSTRUCTORS \
+	FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class AProceduralDungeonPlayerController;
 // ********** End Class AProceduralDungeonPlayerController *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h
+#define CURRENT_FILE_ID FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonPlayerController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

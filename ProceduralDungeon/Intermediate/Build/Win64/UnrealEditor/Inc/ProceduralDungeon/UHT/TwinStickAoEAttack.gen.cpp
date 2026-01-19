@@ -211,14 +211,14 @@ ATwinStickAoEAttack::~ATwinStickAoEAttack() {}
 // ********** End Class ATwinStickAoEAttack ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_Gameplay_TwinStickAoEAttack_h__Script_ProceduralDungeon_Statics
+struct Z_CompiledInDeferFile_FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_Gameplay_TwinStickAoEAttack_h__Script_ProceduralDungeon_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ATwinStickAoEAttack, ATwinStickAoEAttack::StaticClass, TEXT("ATwinStickAoEAttack"), &Z_Registration_Info_UClass_ATwinStickAoEAttack, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATwinStickAoEAttack), 1686281990U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_Gameplay_TwinStickAoEAttack_h__Script_ProceduralDungeon_3776983703(TEXT("/Script/ProceduralDungeon"),
-	Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_Gameplay_TwinStickAoEAttack_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_Gameplay_TwinStickAoEAttack_h__Script_ProceduralDungeon_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_Gameplay_TwinStickAoEAttack_h__Script_ProceduralDungeon_3776983703(TEXT("/Script/ProceduralDungeon"),
+	Z_CompiledInDeferFile_FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_Gameplay_TwinStickAoEAttack_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Dell_Documents_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_Gameplay_TwinStickAoEAttack_h__Script_ProceduralDungeon_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
