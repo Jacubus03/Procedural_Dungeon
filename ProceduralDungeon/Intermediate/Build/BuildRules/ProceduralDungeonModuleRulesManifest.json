@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\Users\\Dell\\Documents\\Unreal Projects\\Procedural_Dungeon\\ProceduralDungeon\\Source\\ProceduralDungeon\\ProceduralDungeon.Build.cs",
-		"C:\\Users\\Dell\\Documents\\Unreal Projects\\Procedural_Dungeon\\ProceduralDungeon\\Source\\ProceduralDungeon.Target.cs",
-		"C:\\Users\\Dell\\Documents\\Unreal Projects\\Procedural_Dungeon\\ProceduralDungeon\\Source\\ProceduralDungeonEditor.Target.cs"
-	],
-	"EngineVersion": "5.6.1"
-}
