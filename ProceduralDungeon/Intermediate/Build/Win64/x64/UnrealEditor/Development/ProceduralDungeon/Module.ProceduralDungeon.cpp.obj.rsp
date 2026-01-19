@@ -1,12 +1,12 @@
-"E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp"
-@"E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/ProceduralDungeon.Shared.rsp"
-/FI"E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/ProceduralDungeonEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/FI"E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Definitions.ProceduralDungeon.h"
-/Yu"E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/ProceduralDungeonEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/Fp"E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/ProceduralDungeonEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
-/Fo"E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp.obj"
-/experimental:log "E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp.sarif"
-/sourceDependencies "E:/Unreal Projects/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp.dep.json"
+"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp"
+@"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/ProceduralDungeon.Shared.rsp"
+/FI"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/ProceduralDungeonEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/FI"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Definitions.ProceduralDungeon.h"
+/Yu"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/ProceduralDungeonEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/Fp"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/ProceduralDungeonEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
+/Fo"C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp.obj"
+/experimental:log "C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp.sarif"
+/sourceDependencies "C:/Users/Natalia/Documents/GitHub/Procedural_Dungeon/ProceduralDungeon/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProceduralDungeon/Module.ProceduralDungeon.cpp.dep.json"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

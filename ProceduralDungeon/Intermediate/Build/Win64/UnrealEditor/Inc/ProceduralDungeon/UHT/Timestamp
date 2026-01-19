@@ -1,24 +1,24 @@
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ADoorBase.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ADungeonGenerator.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ARoomBase.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ProceduralDungeonCharacter.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ProceduralDungeonGameMode.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\StrategyGameMode.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ProceduralDungeonPlayerController.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\StrategyPawn.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\StrategyPlayerController.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\StrategyUnit.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\UI\StrategyHUD.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\UI\StrategyUI.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\TwinStickCharacter.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\TwinStickGameMode.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\TwinStickPlayerController.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickNPC.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickAIController.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickNPCDestruction.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickSpawner.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickStateTreeUtility.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\Gameplay\TwinStickAoEAttack.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\Gameplay\TwinStickPickup.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\Gameplay\TwinStickProjectile.h
-E:\Unreal Projects\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\UI\TwinStickUI.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ADoorBase.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ADungeonGenerator.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ARoomBase.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ProceduralDungeonCharacter.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ProceduralDungeonGameMode.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\ProceduralDungeonPlayerController.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\StrategyGameMode.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\StrategyPawn.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\StrategyPlayerController.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\StrategyUnit.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\UI\StrategyUI.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\TwinStickCharacter.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\TwinStickGameMode.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\TwinStickPlayerController.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickAIController.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickNPC.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickNPCDestruction.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickSpawner.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\AI\TwinStickStateTreeUtility.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\Gameplay\TwinStickAoEAttack.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\Gameplay\TwinStickPickup.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\Gameplay\TwinStickProjectile.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_Strategy\UI\StrategyHUD.h
+C:\Users\Natalia\Documents\GitHub\Procedural_Dungeon\ProceduralDungeon\Source\ProceduralDungeon\Variant_TwinStick\UI\TwinStickUI.h

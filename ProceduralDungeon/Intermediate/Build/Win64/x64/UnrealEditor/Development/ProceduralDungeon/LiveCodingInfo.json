@@ -3,7 +3,9 @@
 	{
 		"Module.ProceduralDungeon.cpp.obj": [
 			"ADoorBase.gen.cpp.obj",
+			"ADungeonGenerator.gen.cpp.obj",
 			"ARoomBase.gen.cpp.obj",
+			"ProceduralDungeon.init.gen.cpp.obj",
 			"ProceduralDungeonCharacter.gen.cpp.obj",
 			"ProceduralDungeonGameMode.gen.cpp.obj",
 			"ProceduralDungeonPlayerController.gen.cpp.obj",
@@ -27,6 +29,7 @@
 			"TwinStickUI.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"ADoorBase.cpp.obj",
+			"ADungeonGenerator.cpp.obj",
 			"ARoomBase.cpp.obj",
 			"ProceduralDungeon.cpp.obj",
 			"ProceduralDungeonCharacter.cpp.obj",
@@ -49,10 +52,7 @@
 			"TwinStickCharacter.cpp.obj",
 			"TwinStickGameMode.cpp.obj",
 			"TwinStickPlayerController.cpp.obj",
-			"TwinStickUI.cpp.obj",
-			"ADungeonGenerator.gen.cpp.obj",
-			"ProceduralDungeon.init.gen.cpp.obj",
-			"ADungeonGenerator.cpp.obj"
+			"TwinStickUI.cpp.obj"
 		]
 	}
 }

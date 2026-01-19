@@ -202,14 +202,14 @@ ATwinStickNPC::~ATwinStickNPC() {}
 // ********** End Class ATwinStickNPC **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_AI_TwinStickNPC_h__Script_ProceduralDungeon_Statics
+struct Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_AI_TwinStickNPC_h__Script_ProceduralDungeon_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ATwinStickNPC, ATwinStickNPC::StaticClass, TEXT("ATwinStickNPC"), &Z_Registration_Info_UClass_ATwinStickNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATwinStickNPC), 1448179252U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_AI_TwinStickNPC_h__Script_ProceduralDungeon_2354674720(TEXT("/Script/ProceduralDungeon"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_AI_TwinStickNPC_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_AI_TwinStickNPC_h__Script_ProceduralDungeon_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_AI_TwinStickNPC_h__Script_ProceduralDungeon_2354674720(TEXT("/Script/ProceduralDungeon"),
+	Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_AI_TwinStickNPC_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_AI_TwinStickNPC_h__Script_ProceduralDungeon_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

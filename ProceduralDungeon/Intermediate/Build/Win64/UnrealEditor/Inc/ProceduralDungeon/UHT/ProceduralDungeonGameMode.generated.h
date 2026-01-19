@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AProceduralDungeonGameMode ***********************************************
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_AProceduralDungeonGameMode_NoRegister();
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAProceduralDungeonGameMode(); \
 	friend struct Z_Construct_UClass_AProceduralDungeonGameMode_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AProceduralDungeonGameMode)
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AProceduralDungeonGameMode(AProceduralDungeonGameMode&&) = delete; \
 	AProceduralDungeonGameMode(const AProceduralDungeonGameMode&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~AProceduralDungeonGameMode();
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_14_PROLOG
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_GENERATED_BODY \
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_14_PROLOG
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class AProceduralDungeonGameMode;
 // ********** End Class AProceduralDungeonGameMode *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h
+#define CURRENT_FILE_ID FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_ProceduralDungeonGameMode_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -592,7 +592,7 @@ AStrategyPlayerController::~AStrategyPlayerController() {}
 // ********** End Class AStrategyPlayerController **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics
+struct Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EStrategyInputMode_StaticEnum, TEXT("EStrategyInputMode"), &Z_Registration_Info_UEnum_EStrategyInputMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 8741266U) },
@@ -601,10 +601,10 @@ struct Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDu
 		{ Z_Construct_UClass_AStrategyPlayerController, AStrategyPlayerController::StaticClass, TEXT("AStrategyPlayerController"), &Z_Registration_Info_UClass_AStrategyPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AStrategyPlayerController), 1117130371U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_2529363678(TEXT("/Script/ProceduralDungeon"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_2529363678(TEXT("/Script/ProceduralDungeon"),
+	Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_Strategy_StrategyPlayerController_h__Script_ProceduralDungeon_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

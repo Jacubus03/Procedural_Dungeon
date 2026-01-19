@@ -17,10 +17,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UTwinStickUI *************************************************************
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_CALLBACK_WRAPPERS
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_CALLBACK_WRAPPERS
 PROCEDURALDUNGEON_API UClass* Z_Construct_UClass_UTwinStickUI_NoRegister();
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTwinStickUI(); \
 	friend struct Z_Construct_UClass_UTwinStickUI_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(UTwinStickUI)
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UTwinStickUI(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -43,13 +43,13 @@ public: \
 	NO_API virtual ~UTwinStickUI();
 
 
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_13_PROLOG
-#define FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_GENERATED_BODY \
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_13_PROLOG
+#define FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_CALLBACK_WRAPPERS \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_CALLBACK_WRAPPERS \
+	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -59,6 +59,6 @@ class UTwinStickUI;
 // ********** End Class UTwinStickUI ***************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Unreal_Projects_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h
+#define CURRENT_FILE_ID FID_Users_Natalia_Documents_GitHub_Procedural_Dungeon_ProceduralDungeon_Source_ProceduralDungeon_Variant_TwinStick_UI_TwinStickUI_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
