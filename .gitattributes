@@ -5,3 +5,5 @@
 *.h   linguist-language=C++
 *.uasset linguist-vendored
 *.umap   linguist-vendored
+* linguist-vendored
+*.html linguist-vendored=false
