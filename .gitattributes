@@ -1,9 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-*.cpp linguist-language=C++
-*.h   linguist-language=C++
-*.uasset linguist-vendored
-*.umap   linguist-vendored
 * linguist-vendored
-*.html linguist-vendored=false
+*.cpp linguist-vendored=false
+*.h linguist-vendored=false
